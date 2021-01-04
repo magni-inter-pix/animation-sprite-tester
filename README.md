@@ -1,9 +1,11 @@
 # animation-sprite-tester
-small tool made in Godot 3.2 to view a directory with png frames as the animation
+small tool made in Godot 3.2.3 to view a directory with png frames as the animation
 
 on directory selection, all the png's in there get played
 
 you can paste a directory in the textfield and press the open dir button to jump to that directory
+
+a square with adjustable color is placed behind the png’s with the same size as the first frame
 
 the framerate is adjustable, you can play backwards or one frame steps
 
@@ -17,4 +19,3 @@ executables on magniip.com:
 the settings: directory, framerate and background color get saved on change
 
 MIT license
-magniip.com
