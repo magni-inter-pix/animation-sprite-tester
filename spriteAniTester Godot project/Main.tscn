@@ -1,0 +1,227 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "anim",
+"speed": 60.0
+} ]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 100.0
+margin_top = 40.0
+margin_right = 309.0
+margin_bottom = 209.0
+color = Color( 0.211765, 0.572549, 0.713726, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 100, 41.1225 )
+frames = SubResource( 1 )
+animation = "anim"
+centered = false
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txtDirPath" type="LineEdit" parent="."]
+anchor_right = 5.0
+margin_left = 100.0
+margin_top = 7.6442
+margin_right = 600.0
+margin_bottom = 31.6442
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnOpenDir" type="Button" parent="."]
+margin_left = 7.67989
+margin_top = 8.52173
+margin_right = 75.6799
+margin_bottom = 28.5217
+text = "Open dir"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="btnOpenDir"]
+margin_right = 415.0
+margin_bottom = 273.0
+window_title = "Open a Directory"
+mode = 2
+access = 2
+current_dir = "/#projects/GoDot/spriteAniTester/spriteAniTester Godot project"
+current_path = "/#projects/GoDot/spriteAniTester/spriteAniTester Godot project/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnOpenFiles" type="Button" parent="."]
+visible = false
+margin_left = 7.67989
+margin_top = 40.5217
+margin_right = 85.6799
+margin_bottom = 60.5217
+text = "Open files"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnPlay" type="Button" parent="."]
+margin_left = 9.501
+margin_top = 183.273
+margin_right = 77.501
+margin_bottom = 203.273
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnNextFrame" type="Button" parent="btnPlay"]
+margin_left = 49.8214
+margin_top = 31.551
+margin_right = 69.8214
+margin_bottom = 51.551
+text = ">"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnPrevFrame" type="Button" parent="btnPlay"]
+margin_left = 27.8214
+margin_top = 31.551
+margin_right = 47.8214
+margin_bottom = 51.551
+text = "<"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnPlaybackwards" type="Button" parent="btnPlay"]
+margin_left = -2.17865
+margin_top = 31.551
+margin_right = 25.8214
+margin_bottom = 51.551
+text = "<<"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnColorBg" type="Button" parent="."]
+margin_left = 9.87557
+margin_top = 133.033
+margin_right = 77.8756
+margin_bottom = 153.033
+text = "Color bg"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBoxFrameRate" type="SpinBox" parent="."]
+margin_left = 8.27456
+margin_top = 93.451
+margin_right = 82.2746
+margin_bottom = 117.451
+max_value = 120.0
+value = 60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblFps" type="Label" parent="."]
+margin_left = 8.74915
+margin_top = 73.7593
+margin_right = 37.7492
+margin_bottom = 87.7593
+text = "Fps:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="colorSelectDialog" type="WindowDialog" parent="."]
+margin_left = 122.321
+margin_top = 62.4289
+margin_right = 438.321
+margin_bottom = 532.429
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorPicker" type="ColorPicker" parent="colorSelectDialog"]
+margin_left = 27.0432
+margin_top = 28.8166
+margin_right = 335.043
+margin_bottom = 490.817
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btnAbout" type="Button" parent="."]
+margin_left = 8.0
+margin_top = 568.056
+margin_right = 63.0
+margin_bottom = 588.056
+text = "About"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="aboutPopup" type="AcceptDialog" parent="btnAbout"]
+margin_top = -368.0
+margin_right = 559.0
+margin_bottom = -60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="btnAbout/aboutPopup"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 551.0
+margin_bottom = 272.0
+focus_mode = 2
+bbcode_enabled = true
+bbcode_text = "[u]Animation sprite tester[/u]
+
+Tool to view and open a directory with separate png frames at a given framerate.
+A square with adjustable color is placed behind the png’s with the same size as the first frame.
+Written in Godot 3.2.3 by [url]Magniip.com[/url]
+
+MIT source, github
+"
+text = "Animation sprite tester
+
+Tool to view and open a directory with separate png frames at a given framerate.
+A square with adjustable color is placed behind the png’s with the same size as the first frame.
+Written in Godot 3.2.3 by Magniip.com
+
+MIT source, github
+"
+selection_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_changed" from="txtDirPath" to="." method="_on_txtDirPath_text_changed"]
+[connection signal="pressed" from="btnOpenDir" to="." method="_on_btnOpenDir_pressed"]
+[connection signal="dir_selected" from="btnOpenDir/FileDialog" to="." method="_on_FileDialog_dir_selected"]
+[connection signal="pressed" from="btnOpenFiles" to="." method="_on_btnOpenFiles_pressed"]
+[connection signal="pressed" from="btnPlay" to="." method="_on_btnPlay_pressed"]
+[connection signal="pressed" from="btnPlay/btnNextFrame" to="." method="_on_btnNextFrame_pressed"]
+[connection signal="pressed" from="btnPlay/btnPrevFrame" to="." method="_on_btnPrevFrame_pressed"]
+[connection signal="pressed" from="btnPlay/btnPlaybackwards" to="." method="_on_btnPlaybackwards_pressed"]
+[connection signal="pressed" from="btnColorBg" to="." method="_on_btnColorBg_pressed"]
+[connection signal="value_changed" from="SpinBoxFrameRate" to="." method="_on_SpinBoxFrameRate_value_changed"]
+[connection signal="color_changed" from="colorSelectDialog/ColorPicker" to="." method="_on_ColorPicker_color_changed"]
+[connection signal="pressed" from="btnAbout" to="." method="_on_btnAbout_pressed"]

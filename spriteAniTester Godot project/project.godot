@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Utils",
+"language": "GDScript",
+"path": "res://script/Utils.gd"
+}, {
+"base": "Node",
+"class": "ViewConstants",
+"language": "GDScript",
+"path": "res://script/ViewConstants.gd"
+} ]
+_global_script_class_icons={
+"Utils": "",
+"ViewConstants": ""
+}
+
+[application]
+
+config/name="Sprite Ani Tester"
+run/main_scene="res://Main.tscn"
+config/icon="res://assets/spriteAniTester icon.png"
+
+[autoload]
+
+SaveSettings="*res://script/SaveSettings.gd"
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
