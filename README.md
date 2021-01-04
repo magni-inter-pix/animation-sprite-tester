@@ -14,7 +14,7 @@ executables on magniip.com:
 [linux](https://magniip.com/spriteAniTester/linux/SpriteAniTester.x86_64)
 [mac](https://magniip.com/spriteAniTester/mac/SpriteAniTester.zip)
 
-![Ani Tester screenshot](https://magniip.com/spriteAniTester/screenshotSpriteAnitester1.0.1.png "Sprite Ani Tester screenshot")
+![Ani Tester screenshot](https://magniip.com/spriteAniTester/screenshotSpriteAnitester1.0.1b.png "Sprite Ani Tester screenshot")
 
 the settings: directory, framerate and background color get saved on change
 
