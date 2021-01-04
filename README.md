@@ -13,7 +13,7 @@ executables on magniip.com:
 
 ![Ani Tester screenshot](https://magniip.com/spriteAniTester/screenshotSpriteAnitester1.0.1.png "Sprite Ani Tester screenshot")
 
-the settings: directory, framerate and fps get saved on change
+the settings: directory, framerate and background color get saved on change
 
 MIT license
 magniip.com
