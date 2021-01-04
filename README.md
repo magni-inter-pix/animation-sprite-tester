@@ -10,12 +10,10 @@ a square with adjustable color is placed behind the png’s with the same size a
 the framerate is adjustable, you can play backwards or one frame steps
 
 executables on magniip.com:
-[windows](https://magniip.com/spriteAniTester/windows/SpriteAniTester.exe)
-[linux](https://magniip.com/spriteAniTester/linux/SpriteAniTester.x86_64)
+[windows](https://magniip.com/spriteAniTester/windows/SpriteAniTester.exe),
+[linux](https://magniip.com/spriteAniTester/linux/SpriteAniTester.x86_64),
 [mac](https://magniip.com/spriteAniTester/mac/SpriteAniTester.zip)
 
 ![Ani Tester screenshot](https://magniip.com/spriteAniTester/screenshotSpriteAnitester1.0.1b.png "Sprite Ani Tester screenshot")
 
 the settings: directory, framerate and background color get saved on change
-
-MIT license
