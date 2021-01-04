@@ -151,6 +151,7 @@ __meta__ = {
 }
 
 [node name="colorSelectDialog" type="WindowDialog" parent="."]
+visible = true
 margin_left = 122.321
 margin_top = 62.4289
 margin_right = 438.321
@@ -160,10 +161,10 @@ __meta__ = {
 }
 
 [node name="ColorPicker" type="ColorPicker" parent="colorSelectDialog"]
-margin_left = 35.0432
-margin_top = 36.8166
-margin_right = 343.043
-margin_bottom = 498.817
+margin_left = 4.08092
+margin_top = 1.61645
+margin_right = 312.081
+margin_bottom = 463.617
 __meta__ = {
 "_edit_use_anchors_": false
 }
